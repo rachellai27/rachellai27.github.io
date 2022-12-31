@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.body-content {
+  text-align: center;
+  font-family: 'Karla';
+}
+
+footer {
+  height: 75px;
+  background-color: #3716f1;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  text-align: center;
+}
+
+mark {
+  background-color: #3716f1;
+  color: rgb(255, 255, 255);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: relative;
+  display: inline-block;
+  text-align:center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 0px 48px;
+  text-decoration: none;
+  font-family: "La Belle Aurore";
+  font-size:25px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color: #3716f1;
+}
+
+.active {
+  color: black;
+  text-decoration: underline;
+}
+
+h1 a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  text-align:center;
+  color: #3716f1;
+  font-family: "Mansalva";
+  font-size:60px;
+}
+
+.name {
+  margin: 1px 0pc 0px 0px;
+}
+
+.column1 {
+  float: left;
+  width: 40%;
+  text-align:center;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+  float: left;
+  width: 60%;
+  text-align:left;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+.row {
+  padding: 0% 10%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 960px) {
+  .column1 {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+}
+
+.btn {
+  background-color: transparent; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 25px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  color: rgb(216, 216, 216);
+}
